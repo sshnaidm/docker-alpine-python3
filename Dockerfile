@@ -1,5 +1,6 @@
 FROM docker.io/alpine:3.5
-MAINTAINER sshnaidm <sshnaidm@gmail.com>
+LABEL maintainer 'sshnaidm <einarum@gmail.com>'
+LABEL description 'Python 3 on Alpine Linux 3.5'
 
 RUN apk add --no-cache python3 bash && \
 python3 -m ensurepip && \
