@@ -1,6 +1,6 @@
-FROM docker.io/alpine:3.5
+FROM alpine:3.8
 LABEL maintainer 'sshnaidm <einarum@gmail.com>'
-LABEL description 'Python 3 on Alpine Linux 3.5'
+LABEL description 'Python 3 on Alpine Linux 3.8'
 
 RUN apk add --no-cache python3 bash postgresql-dev build-base python3-dev && \
 python3 -m ensurepip && \
